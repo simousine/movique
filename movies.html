@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movique • Movies</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .grid {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .tile {
+      background: #1a1a2f;
+      border-radius: 10px;
+      overflow: hidden;
+      width: 200px;
+      text-align: center;
+      box-shadow: 0 0 8px #00fff7;
+    }
+
+    .tile img {
+      width: 100%;
+      height: auto;
+    }
+
+    .tile p {
+      color: #fff;
+      margin: 10px 0;
+      padding: 0 10px;
+    }
+
+    .watch-btn {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 8px 16px;
+      background: #00fff7;
+      color: #000;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .watch-btn:hover {
+      background: #00e0d3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Movique</div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="series.html">Series</a>
+    <a href="sport.html">Sport Live</a>
+    <a href="animations.html">Animations</a>
+    <a href="faq.html">Help</a>
+  </nav>
+
+  <h2 style="text-align:center; color:#00fff7; margin-top:40px;">🎞️ Featured Movies</h2>
+
+  <div class="grid">
+    <div class="tile">
+      <img src="images/posters/train-dragon.jpg" alt="How to Train Your Dragon Poster" />
+      <p><strong>How to Train Your Dragon</strong></p>
+      <a href="player.html?title=How to Train Your Dragon" class="watch-btn">Watch Now</a>
+    </div>
+
+    <div class="tile">
+      <img src="images/posters/chrono-files.jpg" alt="Chrono Files Poster" />
+      <p><strong>Chrono Files</strong></p>
+      <a href="player.html?title=Chrono Files" class="watch-btn">Watch Now</a>
+    </div>
+
+    <div class="tile">
+      <img src="images/posters/skybreaker.jpg" alt="Skybreaker Poster" />
+      <p><strong>Skybreaker</strong></p>
+      <a href="player.html?title=Skybreaker" class="watch-btn">Watch Now</a>
+    </div>
+
+    <!-- Add more movies as needed -->
+  </div>
+
+</body>
+</html>
