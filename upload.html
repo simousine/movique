@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movique • Upload</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .upload-container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #1a1a2f;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00fff7;
+    }
+
+    .upload-container h2 {
+      text-align: center;
+      color: #00fff7;
+      margin-bottom: 20px;
+    }
+
+    .upload-container input,
+    .upload-container textarea,
+    .upload-container button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 6px;
+      background: #292940;
+      color: #fff;
+    }
+
+    .upload-container button {
+      background-color: #00fff7;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .upload-container button:hover {
+      background-color: #00e0d3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Movique</div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="series.html">Series</a>
+    <a href="sport.html">Sport Live</a>
+    <a href="animations.html">Animations</a>
+    <a href="faq.html">Help</a>
+  </nav>
+
+  <div class="upload-container">
+    <h2>📤 Upload Your Video</h2>
+    <form>
+      <input type="text" placeholder="Video Title" required />
+      <textarea placeholder="Brief Description (optional)" rows="4"></textarea>
+      <input type="file" accept="video/*" />
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+
+</body>
+</html>

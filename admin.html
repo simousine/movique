@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movique • Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .admin-container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #1a1a2f;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00fff7;
+    }
+
+    .admin-container h2 {
+      color: #00fff7;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .admin-container input,
+    .admin-container textarea,
+    .admin-container button {
+      display: block;
+      width: 100%;
+      margin-bottom: 16px;
+      padding: 12px;
+      border-radius: 6px;
+      border: none;
+      background: #292940;
+      color: #fff;
+    }
+
+    .admin-container button {
+      background: #00fff7;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .admin-container button:hover {
+      background: #00e0d3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Movique</div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="series.html">Series</a>
+    <a href="sport.html">Sport Live</a>
+    <a href="animations.html">Animations</a>
+    <a href="faq.html">Help</a>
+  </nav>
+
+  <div class="admin-container">
+    <h2>🔧 Admin Dashboard</h2>
+    <form>
+      <input type="text" placeholder="Title" required />
+      <textarea placeholder="Description (optional)" rows="4"></textarea>
+      <input type="file" accept="video/*" />
+      <button type="submit">Upload Video</button>
+    </form>
+  </div>
+
+</body>
+</html>

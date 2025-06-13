@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movique • Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .dashboard {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #1a1a2f;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00fff7;
+    }
+
+    .dashboard h2 {
+      color: #00fff7;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .tile {
+      width: 220px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .tile a {
+      display: inline-block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Movique</div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="series.html">Series</a>
+    <a href="sport.html">Sport Live</a>
+    <a href="animations.html">Animations</a>
+    <a href="faq.html">Help</a>
+  </nav>
+
+  <div class="dashboard">
+    <h2>📂 Your Dashboard</h2>
+    <div class="quick-links">
+      <div class="tile">
+        <p><strong>Continue Watching</strong></p>
+        <a href="player.html?title=Skybreaker" class="watch-btn">Resume</a>
+      </div>
+      <div class="tile">
+        <p><strong>Watch History</strong></p>
+        <a href="#" class="watch-btn">View History</a>
+      </div>
+      <div class="tile">
+        <p><strong>Subscription</strong></p>
+        <a href="payment.html" class="watch-btn">Manage</a>
+      </div>
+      <div class="tile">
+        <p><strong>Favorites</strong></p>
+        <a href="#" class="watch-btn">See Favorites</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

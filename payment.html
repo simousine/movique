@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Movique • Payment</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .payment-container {
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 30px;
+      background: #1a1a2f;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00fff7;
+    }
+
+    .payment-container h2 {
+      text-align: center;
+      color: #00fff7;
+      margin-bottom: 20px;
+    }
+
+    .payment-container input,
+    .payment-container select,
+    .payment-container button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: none;
+      border-radius: 6px;
+      background: #292940;
+      color: #fff;
+    }
+
+    .payment-container button {
+      background: #00fff7;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .payment-container button:hover {
+      background: #00e0d3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Movique</div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="movies.html">Movies</a>
+    <a href="series.html">Series</a>
+    <a href="sport.html">Sport Live</a>
+    <a href="animations.html">Animations</a>
+    <a href="faq.html">Help</a>
+  </nav>
+
+  <div class="payment-container">
+    <h2>💼 Subscription Payment</h2>
+    <form>
+      <select required>
+        <option value="">Select Plan</option>
+        <option>Basic - $5/mo</option>
+        <option>Premium - $10/mo</option>
+        <option>Annual - $99/year</option>
+      </select>
+      <input type="text" placeholder="Cardholder Name" required />
+      <input type="text" placeholder="Card Number" required />
+      <input type="text" placeholder="MM/YY" required />
+      <input type="text" placeholder="CVV" required />
+      <button type="submit">Pay Now</button>
+    </form>
+  </div>
+
+</body>
+</html>
